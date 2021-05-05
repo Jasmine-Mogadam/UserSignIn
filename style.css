@@ -1,0 +1,44 @@
+body {
+  background-color: #FFFAFF;
+}
+h1 {
+  font-family: 'Ewert', cursive;
+}
+p {
+ font-family: 'Quicksand', sans-serif;
+}
+a {
+  color:#FFFAFF;
+  font-family: 'Quicksand', sans-serif;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  background-color: #1E1B18;
+  width: 100%;
+  overflow: auto;
+  height: 50px;
+}
+.nav li{
+  display:inline;
+}
+.nav li {
+  width: 33.3%;
+  //height:25px;
+  //margin-left: 16%;
+  float: left;
+
+  //transition: all 1s;
+}
+/*
+.nav a:hover{
+  color:#D8315B;
+  background-color:#0A2463;
+  transition: all 1s;
+}*/
+.content {
+  align-content: center;
+  margin: 25px;
+}
+//fonts to check out: https://www.1001fonts.com/pixel-fonts.html?page=0
