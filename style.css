@@ -3,6 +3,7 @@ body {
 }
 h1 {
   font-family: 'Ewert', cursive;
+  text-align: center;
 }
 p {
  font-family: 'Quicksand', sans-serif;
@@ -13,6 +14,21 @@ a {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+form {
+  font-family: 'Quicksand', sans-serif;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+label {
+  float: left;
+  text-align: right;
+  margin-right: 15px;
+  width: 100px;
+}
+
+input placeholder{
+  color:grey;
 }
 .nav {
   background-color: #1E1B18;
@@ -31,12 +47,36 @@ a {
 
   //transition: all 1s;
 }
-/*
-.nav a:hover{
-  color:#D8315B;
-  background-color:#0A2463;
-  transition: all 1s;
-}*/
+#navbar {
+  z-index: 100;
+  overflow: hidden;
+  background-color: #333;
+  height:50px;
+  //position: relative;
+}
+
+#navbar a {
+  z-index:300;
+  position: relative;
+  width: 33.3%;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+/*#0A2463*/
+.highlight {
+  width:33.3%;
+  height:50px;
+  background-color: #D8315B;
+  position: relative;
+  z-index: 200;
+  transition:all 1s;
+}
+
 .content {
   align-content: center;
   margin: 25px;
