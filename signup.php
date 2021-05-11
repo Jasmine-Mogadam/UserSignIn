@@ -1,9 +1,11 @@
 <!--http://www.webformfactory.com/-->
-
 <?php
-  $ php -S localhost:8000
-  $PageTitle="Sign In";
-  include_once('header.php');
+$PageTitle="New Page Title";
+$HighlightMarginLeft="33.3%";
+function customPageHeader(){?>
+<!--h1>Sign Up0</h1-->
+<?php }
+include_once('header.php');
 ?>
       <h1>Sign Up</h1>
       <br><br>
@@ -13,7 +15,7 @@
             <label>Email:</label>
           </div>
           <div class="col">
-            <input type="text" name="email" value="email" placeholder="email">
+            <input type="text" name="email" value="email">
           </div>
         </div>
         <div class="row">
@@ -21,25 +23,30 @@
             <label>Username:</label>
           </div>
           <div class="col">
-            <input type="text" name="username" value="username" placeholder="username">
+            <input type="text" name="username" value="username">
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <label>Password:</label>
+            <div class="text-end">
+              <label>Password:</label>
+            </div>
           </div>
           <div class="col">
-            <input type="password" name="pwd" value="pwd" placeholder="password">
+            <input type="password" name="pwd" value="pwd">
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <label>Repeat Password:</label>
+            <div class="float-end">
+              <label>Repeat Password:</label>
+            </div>
           </div>
           <div class="col">
-            <input type="password" name="pwdrepeat" value="pwdrepeat" placeholder="repeat password">
+            <input type="password" name="pwdRepeat" value="pwdRepeat">
           </div>
         </div>
+        <br>
         <button type="submit" name="submit">Sign Up</button>
       </form>
 <?php

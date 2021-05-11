@@ -1,11 +1,12 @@
 $(document).ready(function(){
-  $("#nav1").click(function(){
+  //when navbar is hovered over
+  $("#nav1").hover(function(){
     $(".highlight").attr("style","margin-left:0px;");
   });
-  $("#nav2").click(function(){
+  $("#nav2").hover(function(){
     $(".highlight").attr("style","margin-left:33.3%;");
   });
-  $("#nav3").click(function(){
-    $(".highlight").attr("style","margin-left:66.6%");
+  $("#nav3").hover(function(){
+    $(".highlight").attr("style","margin-left:66.6%;");
   });
 })
