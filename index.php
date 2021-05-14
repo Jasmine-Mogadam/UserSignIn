@@ -14,7 +14,7 @@ include_once('header.php');
         <li>Spicy Navbar that changes it's highlighted button depending on which page you're on</li>
         <li>Bootstrap tables to format singup pages</li>
         <li>WIP footer I'm having trouble pushing the bottom of the page >:</li>
-      </ul><br><br>
+      </ul>
 <?php
   include_once('footer.php');
 ?>

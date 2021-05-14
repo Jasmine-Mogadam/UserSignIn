@@ -1,4 +1,8 @@
+html{
+  height:100%;
+}
 body {
+  height:100%;
   background-color: #FFFAFF;
 }
 h1 {
@@ -67,6 +71,7 @@ button {
 .content {
   align-content: center;
   margin: 25px;
+  position: relative;
 }
 //fonts to check out: https://www.1001fonts.com/pixel-fonts.html?page=0
 
