@@ -13,7 +13,7 @@ $(document).ready(function(){
 
   let ContentHeight = $(".content").height();
   console.log(ContentHeight);
-  let PageHeight = $(document).height();
+  let PageHeight = window.innerHeight;
   console.log(PageHeight);
   if(ContentHeight>=PageHeight/2.5){
     $(".footer").attr("style","width:100%;margin-top:50px;background-color: #1E1B18;color: #f2f2f2;text-align: center;position: relative;bottom:auto;");
