@@ -15,12 +15,12 @@ $(document).ready(function(){
   console.log(ContentHeight);
   let PageHeight = $(document).height();
   console.log(PageHeight);
-  if(ContentHeight<=PageHeight/3){
-    $(".footer").attr("style","width:100%;margin-top:50px;background-color: #1E1B18;color: #f2f2f2;text-align: center;position: relative;bottom: auto;");
+  if(ContentHeight>=PageHeight/2.5){
+    $(".footer").attr("style","width:100%;margin-top:50px;background-color: #1E1B18;color: #f2f2f2;text-align: center;position: relative;bottom:auto;");
     console.log("haw");
   }
   else {
-    $(".footer").attr("style","width:100%;margin-top:50px;background-color: #1E1B18;color: #f2f2f2;text-align: center;position: absolute;bottom: 10px;");
+    $(".footer").attr("style","width:100%;margin-top:50px;background-color: #1E1B18;color: #f2f2f2;text-align: center;position: absolute;bottom:0px;");
     console.log("ye");
   }
 })
