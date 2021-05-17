@@ -19,12 +19,14 @@
       <a id="nav2" href="signup.php">Sign Up</a>
       <a id="nav3" href="login.php">Login</a>
       <div class="highlight" style="margin-left:0px"></div>
+      <div class="highlightB" style="margin-left:0px"></div>
     </div>
     <script>
       //when mouseleaves navbar
       $(document).ready(function(){
         $('#navbar').mouseleave(function(){
-          $(".highlight").attr("style","margin-left:<?= isset($HighlightMarginLeft) ? $HighlightMarginLeft : '0px'?>");
+          $(".highlight").attr("style","margin-left:0px");
+          $(".highlightB").attr("style","margin-left:0px");
         })
       })
     </script>

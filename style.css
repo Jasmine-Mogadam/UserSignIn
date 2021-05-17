@@ -68,6 +68,16 @@ button {
   transition:all 1s;
 }
 
+.highlightB {
+  width:33.3%;
+  height:50px;
+  background-color: ##0A2463;
+  position:relative;
+  top:-50px;
+  z-index: 300;
+  transition:all 1.5s;
+}
+
 .content {
   align-content: center;
   margin: 25px;

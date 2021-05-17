@@ -2,12 +2,15 @@ $(document).ready(function(){
   //when navbar is hovered over, move highlight to hovered button!
   $("#nav1").hover(function(){
     $(".highlight").attr("style","margin-left:0px;");
+    $(".highlightB").attr("style","margin-left:0px;");
   });
   $("#nav2").hover(function(){
     $(".highlight").attr("style","margin-left:33.3%;");
+    $(".highlightB").attr("style","margin-left:33.3%;");
   });
   $("#nav3").hover(function(){
     $(".highlight").attr("style","margin-left:66.6%;");
+    $(".highlightB").attr("style","margin-left:66.6%;");
   });
 
 
