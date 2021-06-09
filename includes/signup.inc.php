@@ -11,31 +11,31 @@ if (isset($_POST["submit"])){ //runs code if submitted from form
   require_once 'functions.inc.php';
 
   if(emptyInputSignup($email,$username,$pwd,$pwdRepeat) !== false){
-    header("location: ../signup.php?error=emptyinput"); //redirects to form if not submited from form
+    header("location: ../signup.php?error=emptyinput"); //redirects if any input it empty
     exit();
 
   }
   if(invalidUid($username) !== false){
-    header("location: ../signup.php?error=invaliduid"); //redirects to form if not submited from form
+    header("location: ../signup.php?error=invaliduid"); //redirects if uid has unwanted characters
     exit();
 
   }
   if(invalidEmail($email) !== false){
-    header("location: ../signup.php?error=invalidemail"); //redirects to form if not submited from form
+    header("location: ../signup.php?error=invalidemail"); //redirects if email format is incorrect
     exit();
   }
   if(pwdMatch($pwd,$pwdRepeat) !== false){
-    header("location: ../signup.php?error=passwordsdontmatch"); //redirects to form if not submited from form
+    header("location: ../signup.php?error=passwordsdontmatch"); //redirects if passwords dont match
     exit();
   }
   if(uidExists($conn,$username,$email) !== false){
-    header("location: ../signup.php?error=usernametaken"); //redirects to form if not submited from form
+    header("location: ../signup.php?error=usernametaken"); //redirects if username is already in use
     exit();
   }
 
   createUser($conn,$email,$username,$pwd);
 }
 else {
-  header("location: ../signup.php"); //redirects to form if not submited from form
+  header("location: ../signup.php"); //redirects if not submited from form (anti-bot)
   exit();
 }

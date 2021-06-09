@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,10 +24,20 @@
   <body>
     <div id="navbar">
       <a id="nav1" href="index.php">Home</a>
-      <a id="nav2" href="signup.php">Sign Up</a>
-      <a id="nav3" href="login.php">Login</a>
+      <a id="nav2" href="forum.php">Forum</a>
+      <?php
+        if(isset($_SESSION["useruid"])){
+          echo "<a id='nav3' href='profile.php'>Profile Page</a>";
+          echo "<a id='nav4' href='includes/logout.inc.php'>Log Out</a>";
+        }
+        else{
+          echo "<a id='nav3' href='signup.php'>Sign Up</a>";
+          echo "<a id='nav4' href='login.php'>Login</a>";
+        }
+      ?>
+
       <div class="highlight" style="margin-left:<?= isset($HighlightMarginLeft) ? $HighlightMarginLeft : '0px'?>"></div>
-      <div class="highlightB" style="margin-left:<?= isset($HighlightMarginLeft) ? $HighlightMarginLeft : '0px'?>"></div>
+      <!--div class="highlightB" style="margin-left:<?= isset($HighlightMarginLeft) ? $HighlightMarginLeft : '0px'?>"></div-->
     </div>
     <script>
       //when mouseleaves navbar

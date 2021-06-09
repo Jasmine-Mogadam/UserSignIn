@@ -49,7 +49,7 @@ button {
 #navbar a {
   z-index:300;
   position: relative;
-  width: 33.3%;
+  width: 25%;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -60,7 +60,7 @@ button {
 }
 /*#0A2463*/
 .highlight {
-  width:33.3%;
+  width:25%;
   height:50px;
   background-color: #D8315B;
   position: relative;
@@ -69,13 +69,17 @@ button {
 }
 
 .highlightB {
-  width:33.3%;
+  width:25%;
   height:50px;
   background-color: ##0A2463;
   position:relative;
   top:-50px;
   z-index: 300;
   transition:all 1.5s;
+}
+
+.errorBox p{
+  text-align: center;
 }
 
 .content {
